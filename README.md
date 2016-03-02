@@ -9,6 +9,10 @@ This returns an output with the Signature Version 2 of AWS and all the relevant 
 
 curl -X GET -H "Accept-Encoding: identity" -H "User-Agent: curl/7.35.0" -H "Content-Type: application/json" "http://10.0.2.15:8788/services/Cloud/?SignatureVersion=2&AWSAccessKeyId=02b0532340f242e090dfc53bb331b3bf&Timestamp=2016-01-10T17:49:32Z&SignatureMethod=HmacSHA256&Version=2014-10-01&Signature=W0atbmSuRQtc2I0VA827hNQFRZUFgWT9HTHHI4boghM=&Action=DescribeInstances"
 
+
+
+ eval "$(./create_request.py "https://compute.ind-west-1.staging.jiocloudservices.com/?Action=DescribeVolumes&Version=2016-03-01")"
+
 The script reads the access key and secret key from the following env variables.
 
 JCS_ACCESS_KEY
